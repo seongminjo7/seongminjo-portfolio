@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+/* GyeonggiTitle */
+@font-face {
+  font-family: 'GyeonggiTitle_B';
+  src: url('../font/경기천년제목_Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'GyeonggiTitle_M';
+  src: url('../font/경기천년제목_Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'GyeonggiTitle_L';
+  src: url('../font/경기천년제목_Light.ttf') format('truetype');
+}
+
+/* SEOLEIMcool */
+@font-face {
+  font-family: 'SEOLEIMcool';
+  src: url('../font/SEOLEIMcool.ttf') format('truetype');
+}
+
+/* GamtanRoad */
+@font-face {
+  font-family: 'GamtanRoad_B';
+  src: url('../font/감탄로드돋움체\ Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'GamtanRoad_R';
+  src: url('../font/감탄로드돋움체\ Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'GamtanRoad_T';
+  src: url('../font/감탄로드돋움체\ Thin.ttf') format('truetype');
+}
+
+/* "Noto Sans KR", sans-serif */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* Cafe24Ohsquare */
+@font-face {
+  font-family: 'Cafe24Ohsquare';
+  src: url('../font/Cafe24Ohsquare-v2.0.ttf') format('truetype');
+}
+
+/* Cafe24OhsquareAir */
+@font-face {
+  font-family: 'Cafe24OhsquareAir';
+  src: url('../font/Cafe24OhsquareAir-v2.0.ttf') format('truetype');
+}
+
+/* Cafe24Simplehae */
+@font-face {
+  font-family: 'Cafe24Simplehae';
+  src: url('../font/Cafe24Simplehae-v2.0.ttf') format('truetype');
+}
+
+/* Cafe24SsurroundAir */
+@font-face {
+  font-family: 'Cafe24SsurroundAir';
+  src: url('../font/Cafe24SsurroundAir-v1.1.ttf') format('truetype');
+}
+
+/* KyoboHandwriting2019 */
+@font-face {
+  font-family: 'KyoboHandwriting2019';
+  src: url('../font/KyoboHandwriting2019.ttf') format('truetype');
+}
+
+/* UhBee_Se_hyun */
+@font-face {
+  font-family: 'UhBee_Se_hyun';
+  src: url('../font/UhBee\ Se_hyun.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'UhBee_Se_hyun_B';
+  src: url('../font/UhBee\ Se_hyun\ Bold.ttf.ttf') format('truetype');
+}
+
+/* NanumSquareNeo */
+@font-face {
+  font-family: 'NanumSquareNeo_L';
+  src: url('../font/NanumSquareNeo-aLt.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'NanumSquareNeo_R';
+  src: url('../font/NanumSquareNeo-bRg.ttf') format('truetype');
+}
+
+/* NanumSquareNeo */
+@font-face {
+  font-family: 'NanumSquareNeo_L';
+  src: url('../font/NanumSquareNeo-aLt.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'NanumSquareNeo_R';
+  src: url('../font/NanumSquareNeo-bRg.ttf') format('truetype');
+}
+
+/* SUITE */
+@font-face {
+  font-family: 'SUITE_H';
+  src: url('../font/SUITE-Heavy.otf') format('truetype');
+}
+@font-face {
+  font-family: 'SUITE_SB';
+  src: url('../font/SUITE-SemiBold.otf') format('truetype');
+}
+@font-face {
+  font-family: 'SUITE_R';
+  src: url('../font/SUITE-Regular.otf') format('truetype');
+}
+
+/* GmarketSans */
+@font-face {
+  font-family: 'GmarketSans_B';
+  src: url('../font/GmarketSansTTFBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'GmarketSans_M';
+  src: url('../font/GmarketSansTTFMedium.ttf') format('truetype');
+}
