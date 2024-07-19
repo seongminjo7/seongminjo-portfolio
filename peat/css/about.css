@@ -1,0 +1,1027 @@
+@charset "utf-8";
+
+body::-webkit-scrollbar {
+  width: 10px;  /* 스크롤바 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 10%; /* 스크롤바 길이 */
+  background: #FFAA5C; /* 스크롤바 색상 */
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--wrap-color);  /*스크롤바 뒷 배경 색상*/
+}
+
+
+
+/* donate_btn */
+
+.donate_btn {
+  position: fixed;
+  right: 75px;
+  bottom: 45px;
+  width: 125px;
+  height: 125px;
+  z-index: 100;
+}
+
+.donate_btn a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.donate_btn a img {
+  position: absolute;
+}
+
+.donate_btn a img.btn_fixed {
+  z-index: 1;
+}
+
+.donate_btn a img.btn_rotate {
+  animation: btnRotate 8s infinite linear;
+}
+
+@keyframes btnRotate {
+  0% {}
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* header */
+
+header {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .header_wrap {
+  width: 1674px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+header .header_wrap h1 {
+  width: 200px;
+  height: 67px;
+}
+
+header .header_wrap h1 a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+header .header_wrap nav {
+  width: 50%;
+  font-weight: 600;
+  border-radius: 50px;
+  background: #86DBC7;
+  color: #fff;
+  height: 70px;
+}
+
+header .header_wrap nav ul.gnb {
+  height: 100%;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  padding: 0 3px;
+}
+
+header .header_wrap nav ul.gnb li {
+  flex: 1;
+  height: 90%;
+  transition: .6s;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+header .header_wrap nav ul.gnb li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .header_wrap nav ul.gnb li.on,
+header .header_wrap nav ul.gnb li:hover {
+  background: #fff;
+  color: #111;
+}
+
+header .header_wrap ul.sub {
+  display: flex;
+  font-weight: 600;
+  font-size: 15px;
+  border: 2px solid var(--main-color);
+  border-radius: 50px;
+  width: 200px;
+  height: 45px;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #111;
+}
+
+header .header_wrap ul.sub li {
+  width: 90px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+header .header_wrap ul.sub li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: .5;
+  transition: .5s;
+}
+
+header .header_wrap ul.sub li a:hover {
+  opacity: 1;
+}
+
+header .header_wrap ul.sub li:first-child {
+  border-right: 2px solid #808080;
+}
+
+header .header_wrap ul.sub li:last-child {
+  color: var(--main-color);
+}
+
+
+.wrap{
+  overflow: hidden;
+}
+ 
+.main {
+  width: 100%;
+  height: 806px;
+  background: url(../img/about/main_visual.png) no-repeat center center;
+}
+
+.main .about_us {
+  width: 707px;
+  height: 406px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border-radius: 5px 0px 0px 5px;
+  background: rgba(255, 255, 255, 0.90);
+  padding-top: 90px;
+  padding-left: 52px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.main .about_us span {
+  font-size: 20px;
+  color: #FF832E;
+}
+
+.main .about_us h3 {
+  font-size: 50px;
+  color: #3E2A2B;
+}
+
+.main .about_us .p_box {
+  height: 120px;
+  color: #3E2A2B;
+}
+
+.main .about_us .p_box p {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 600px;
+}
+
+.intro {
+  position: relative;
+  width: 100%;
+  height: 1045px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro .txt_box {
+  width: 984px;
+  height: 702px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.intro .txt_box .peat {
+  width: 100%;
+  height: 387px;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+line-height: 47px;
+}
+
+.intro .txt_box .peat div {
+  width: 420px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.intro .txt_box .peat div p {
+  margin-left: 10px;
+  height: 60px;
+}
+
+.intro .txt_box .about {
+  width: 100%;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+.intro .txt_box .about .mean {
+  color: #3C3C3C;
+  font-size: 35px;
+}
+
+.intro .txt_box .about .mean span.sb {
+  font-weight: 600;
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+.intro .txt_box .about .mean span.m {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 500;
+}
+
+.intro .txt_box .about p {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 20px;
+  color: #505050;
+  width: 694px;
+  height: 90px;
+}
+
+.intro .img_box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.intro .img_box img {
+  position: absolute;
+}
+
+.intro .img_box img.intro1 {
+  top: 28px;
+  right: 251px;
+  display: block;
+}
+
+.intro .img_box img.intro2 {
+  left: 126px;
+  top: 246px;
+  display: block;
+}
+
+.intro .img_box img.intro3 {
+  right: 225px;
+  bottom: 64px;
+  display: block;
+}
+
+.intro .img_box img.intro1.on, .intro .img_box img.intro2.on, .intro .img_box img.intro3.on, .intro .img_box img.intro4.on{
+  animation: prAni 0.6s forwards;
+}
+
+
+@keyframes prAni {
+  0% {
+    margin-top: 50px;
+    opacity: 0;
+  }
+
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+
+ /* why */
+.why {
+  width: 100%;
+  height: 940px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(134, 219, 199, 0.20);
+}
+
+.why .container {
+  height: 663px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.why .container h2 {
+  height: 80px;
+  color: #FF832E;
+}
+
+.why .container .things {
+  width: 100%;
+  height: 486px;
+}
+
+.why .container .things ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.why .container .things ul li {
+  width: 300px;
+  height: 486px;
+  border-radius: 40px;
+  border: 4px solid #FDE9CA;
+  background: rgba(255, 255, 255, 0.30);
+  display: flex;
+  flex-direction: column;
+/*   justify-content: space-around;
+  align-items: center; */
+
+  position: relative;
+  background: rgb(243, 243, 219);
+}
+
+.why .container .things ul li div {
+  position: absolute;
+  left: 25px;
+  top: 30px;
+  width: 250px;
+  height: 250px;
+}
+
+.why .container .things ul li div.things1 {
+  background: url(../img/about/things1.png) no-repeat center center;
+}
+
+.why .container .things ul li div.things2 {
+  background: url(../img/about/things2.png) no-repeat center center;
+}
+
+.why .container .things ul li div.things3 {
+  background: url(../img/about/things3.png) no-repeat center center;
+}
+
+.why .container .things ul li div.things4 {
+  background: url(../img/about/things4.png) no-repeat center center;
+}
+
+.why .container .things ul li div .txt{
+/*  background: rgb(247, 188, 198,0.5); */
+
+ position: absolute;
+top: 180px;
+ left: -5px;
+}
+
+.why .container .things ul li div .txt span {
+  width: 100%;
+  text-align: center;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.why .container .things ul li p {
+  width: 225px;
+  height: 160px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 17px;
+  color: var(--black);
+  line-height: 28.35px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 80px;
+  font-weight: 400px;
+}
+
+
+/* value */
+section.value {
+  width: 100%;
+  height: 725px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #FFFDF2;
+  overflow: hidden;
+}
+
+section.value>div {
+  position: absolute;
+}
+
+section.value .deco1 {
+  width: 190px;
+  height: 190px;
+  background: url(../img/about/value_deco1.png);
+  left: 180px;
+  top: 180px;
+}
+
+section.value .deco2 {
+  width: 125px;
+  height: 125px;
+  background: url(../img/about/value_deco2.png);
+  right: 255px;
+  top: 205px;
+}
+
+section.value .deco3 {
+  width: 75px;
+  height: 75px;
+  background: url(../img/about/value_deco3.png);
+  left: 397px;
+  bottom: 0;
+}
+
+section.value .deco4 {
+  width: 44px;
+  height: 44px;
+  background: url(../img/about/value_deco4.png);
+  right: 422px;
+  bottom: 106px;
+}
+
+.value .deco1, .value .deco2, .value .deco3, .value .deco4 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: yellow;
+  border-radius: 50%;
+  animation: float 5s linear infinite, blink 2s ease-in-out infinite;
+}
+
+/* 각각의 원 위치를 설정 */
+@keyframes float {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+section.value .core {
+  width: 1140px;
+  height: 468px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.value .core .we {
+  width: 1139px;
+  height: 285px;
+  background: url(../img/about/core_bg.png)center center;
+  display: flex;
+  justify-content: center;
+}
+
+section.value .core .we ul.list {
+  width: 990px;
+  height: 285px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+section.value .core ul li {
+  width: 250px;
+  height: 130px;
+  border-radius: 200px;
+/*   opacity: 0.85; */
+  background: #86DBC7;
+  margin: 0 40px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 25px;
+}
+
+section.value .core ul li:nth-child(4),
+section.value .core ul li:nth-child(5){
+  background: #a0f1de;
+  opacity: 0.75;
+}
+
+
+/* mision_goal */
+section.mision_goal {
+  width: 100%;
+  height: 1610px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+section.mision_goal .tit {
+  width: 1052px;
+  height: 206px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+
+section.mision_goal .tit p {
+  text-align: center;
+  font-size: 20px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 500;
+  color: #666;
+}
+
+section.mision_goal .mision {
+  width: 100%;
+  height: 1124px;
+  margin-top: 92px;
+}
+
+section.mision_goal .mision div .txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.mision_goal .mision div .txt h4 {
+  font-family: "MangoDdobak_B";
+  font-size: 36px;
+}
+
+section.mision_goal .mision div .txt ul {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 20px;
+}
+
+section.mision_goal .mision div .txt ul li {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+section.mision_goal .mision div .txt ul li:last-child {
+  align-items: self-start;
+}
+
+section.mision_goal .mision div .txt ul li p {
+  text-align: left;
+  padding-left: 30px;
+}
+
+section.mision_goal .mision .top {
+  width: 100%;
+  height: 560px;
+  background: url(../img/about/top_bg.png)center center;
+  position: relative;
+}
+
+section.mision_goal .mision .top .txt {
+  width: 527px;
+  height: 396px;
+  position: absolute;
+  right: 270px;
+  top: 82px;
+}
+
+section.mision_goal .mision .bottom {
+  width: 100%;
+  height: 564px;
+  background: url(../img/about/bottom_bg.png);
+  position: relative;
+}
+
+section.mision_goal .mision .bottom .txt {
+  width: 530px;
+  height: 396px;
+  position: absolute;
+  left: 280px;
+  top: 90px;
+}
+
+section.mision_goal .mision .bottom>img {
+  width: 955px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+section.mision_goal .mision .bottom .txt ul li {
+  margin-top: 25px;
+}
+
+/* whatwedo */
+section.whatwedo {
+  height: 1872px;
+  position: relative;
+/*   background: rgb(236, 236, 199); */
+}
+
+section.whatwedo .deco {
+  width: 100%;
+  height: 219px;
+  background: url(../img/about/campaine_bg.png);
+  position: absolute;
+  left: 0;
+  top: 35%;
+  z-index: -1;
+}
+
+section.whatwedo .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+section.whatwedo div h3 {
+  font-family: "MangoDdobak_B";
+  font-size: 50px;
+  color: #3c3c3c;
+}
+
+section.whatwedo .campaine {
+  width: 100%;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+ /*  justify-content: space-between; */
+  align-items: center;
+}
+
+section.whatwedo .container h2{
+  padding-top: 100px;
+/*   background: paleturquoise; */
+}
+
+
+section.whatwedo .campaine h3 {
+  align-self: flex-start;
+}
+
+section.whatwedo .campaine .campaine_box {
+  width: 1012px;
+  height: 505px;
+  background: #f0f0f0;
+  position: relative;
+}
+
+section.whatwedo .campaine .campaine_box img{
+  border-radius: 5px;
+}
+
+section.whatwedo .campaine .campaine_box .txt {
+  width: 440px;
+  height: 320px;
+  border-radius: 4.5px;
+  background: rgba(47, 47, 47, 0.70);
+  position: absolute;
+  right: 41px;
+  bottom: 83px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+section.whatwedo .campaine .campaine_box .txt .intxt {
+  width: 310px;
+  height: 198px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  color: #fff;
+  /* background: gray; */
+}
+
+section.whatwedo .campaine .campaine_box .txt .intxt h4 {
+  font-family: "MangoDdobak_L";
+  font-size: 34px;
+}
+
+
+section.whatwedo .campaine .campaine_box .txt .intxt p {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: 100px;
+/*   background: rgb(224, 224, 197,0.5); */
+  padding-top: 15px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+  color: #f56f16;
+  font-size: 50px;
+  font-weight: 600px;
+}
+
+section.whatwedo .project {
+  width: 100%;
+  height: 637px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.whatwedo .project ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.whatwedo .project ul li {
+  width: 380px;
+  height: 526px;
+  background: #8CE3CE;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+section.whatwedo .project ul li:nth-child(2) {
+  background: #B7EFE2;
+}
+
+section.whatwedo .project ul li h4 {
+  font-family: "MangoDdobak_B";
+  padding-top: 20px;
+  font-size: 35px;
+}
+
+section.whatwedo .project ul li .img {
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+  overflow: hidden;
+}
+
+section.whatwedo .project ul li .img img {
+  transition: 0.7s;
+}
+
+section.whatwedo .project ul li:hover .img img {
+  transform: scale(1.1);
+}
+
+section.whatwedo .project ul li p {
+  font-family: "MangoDdobak_R";
+  font-size: 25px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+
+
+
+/* footer */
+
+
+footer {
+  width: 100%;
+  height: 900px;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .count {
+  width: 100%;
+  height: 182px;
+  padding-right: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer .count .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .count .top .line {
+  width: 1092px;
+  height: 8px;
+  border-radius: 0px 4px 4px 0px;
+  background-color: var(--main-color);
+}
+
+footer .count .top p {
+  font-size: 48px;
+  color: #777;
+  font-family: "MangoDdobak_R";
+}
+ 
+footer .count .bottom {
+  font-size: 128px;
+  color: #BCBCBC;
+  align-self: flex-end;
+}
+
+footer .count .bottom p {
+  height: 128px;
+  font-family: "MangoDdobak_R";
+}
+
+
+footer .phrase {
+  height: 274px;
+  border-bottom: 10px solid var(--main-color);
+  text-align: center;
+}
+
+footer .phrase strong {
+  font-family: "yangjin";
+  font-size: 198px;
+  color: var(--main-color);
+  font-weight: 100;
+  letter-spacing: -6px;
+}
+
+footer .container {
+  height: 224px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer .container .info {
+  height: 124px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
+footer .container .info .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .container .info .top ul {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+footer .container .info .top ul.menu {
+  width: 694px;
+}
+
+footer .container .info .top ul.menu li {
+  height: 40px;
+  padding: 0 3px;
+  line-height: 40px;
+  color: #3CB296;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer .container .info .top ul.menu li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+footer .container .info .top ul.menu li:hover {
+  border-bottom: 2px solid #3CB296;
+}
+
+footer .container .info .top ul.sns {
+  width: 192px;
+}
+
+footer .container .info .top ul.sns li {
+  opacity: .5;
+  transition: .5s;
+}
+
+footer .container .info .top ul.sns li:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+footer .container .info .top ul.sns li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+footer .container .info .top ul li {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+footer .container .info .bottom {
+  width: 700px;
+  height: 48px;
+  align-self: center;
+}
+
+footer .container .info .bottom ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+
+footer .container .info .bottom ul li {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  color: #3CB296;
+  padding: 0 7px;
+}
+
+footer .container .info .bottom ul li.right {
+  border-right: 2px solid var(--main-color);
+}
+
+footer .container .name_copy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name_copy p {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #777;
+}

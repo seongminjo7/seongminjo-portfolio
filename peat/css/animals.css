@@ -1,0 +1,765 @@
+@charset "utf-8";
+
+* {
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  background: var(--wrap-color);
+}
+
+section h2 {
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 5px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 110px;
+}
+
+/* main visual */
+section.main_visual {
+  height: calc(100vh - 129px);
+  position: relative;
+}
+
+section.main_visual .deco {
+  width: 100%;
+  height: 160px;
+  background: url(../img/animals/main_visual_deco.png);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+section.main_visual .container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  height: 100%;
+}
+
+section.main_visual .main_txt {
+  width: 75%;
+  margin-top: 30px;
+}
+
+section.main_visual .main_txt .add {
+  font-size: 23px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 600;
+  color: #555555;
+}
+
+section.main_visual .main_txt div {
+  display: flex;
+  align-items: end;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+
+section.main_visual .main_txt div h2 {
+  letter-spacing: 5px;
+  color: var(--black);
+}
+
+section.main_visual .main_txt div .img_box {
+  width: 260px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+section.main_visual .main_txt div>.long {
+  width: 280px;
+}
+
+section.main_visual .main_txt div ul {
+  width: 400%;
+  height: 100px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+section.main_visual .main_txt .m_top {}
+
+section.main_visual .main_txt .m_middle {}
+
+section.main_visual .main_txt .m_footer {}
+
+
+section.main_visual .main_txt p {
+  font-family: "IBM Plex Sans KR",
+    sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  border: 2px solid #555;
+  width: 110px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin: 100px auto;
+  color: #555;
+}
+
+section.main_visual .main_txt p img {
+  animation: down 1.5s infinite;
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(3px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/* quiz */
+section.quiz {
+  background: var(--main-color);
+  position: relative;
+  overflow: hidden;
+}
+
+section.quiz h2 {
+  margin-top: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 8%;
+}
+
+section.quiz .bg_txt {
+  padding-top: 30px;
+  position: absolute;
+  left: 0;
+  top: 62%;
+  transform: translateY(-50%);
+  flex-shrink: 0;
+}
+
+section.quiz .bg_txt p {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 110px;
+  font-family: "yangjin";
+  color: transparent;
+  -webkit-text-stroke: #fff 1px;
+  animation: autoSlide 105s linear infinite;
+}
+
+section.quiz .bg_txt p:nth-child(2) {
+  padding: 50px 0;
+  color: #fff;
+  text-shadow: 0;
+  animation: autoSlide 90s linear infinite;
+}
+
+@keyframes autoSlide {
+  from {
+    transform: translate(0)
+  }
+
+  to {
+    transform: translate(-100%)
+  }
+}
+
+section.quiz .container {
+  height: 100%;
+  position: relative;
+}
+
+section.quiz .container .all_box {
+  width: 80%;
+  height: 550px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+
+section.quiz .container .all_box .tit {
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  background: linear-gradient(180deg, #FF9519 0%, #86DBC7 100%);
+  box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "MangoDdobak_B";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  z-index: 1;
+}
+
+section.quiz .container .all_box .tit i {
+  font-size: 35px;
+  padding-bottom: 5px;
+}
+
+section.quiz .container .out_box {
+  width: 100%;
+  height: 500px;
+  background: #FF951A;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+section.quiz .container .in_box {
+  width: 96%;
+  height: 460px;
+  background: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px 0;
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+section.quiz .container .in_box h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+section.quiz .container .in_box ul {
+  width: 50%;
+  text-align: center;
+  font-size: 22px;
+  margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+section.quiz .container .in_box ul li {
+  width: 260px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+section.quiz .container .in_box ul li:hover {
+  animation: warigari 0.3s linear infinite;
+}
+
+section.quiz .container .in_box ul li:nth-child(3):hover {
+  animation: none;
+  transform: scale(1.05);
+  color: #FF951A;
+}
+
+@keyframes warigari {
+  0% {
+    transform: translateX(0px);
+  }
+
+  25% {
+    transform: translateX(3px);
+  }
+
+  50% {
+    transform: translateX(0px);
+  }
+
+  75% {
+    transform: translateX(-3px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+section.quiz .container .in_box ul li::before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 2.5px solid #FFB546;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+section.quiz .container .in_box ul li.on::before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../img/animals/check_on.png)center center;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+section.quiz .container .in_box .answer_btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 65px;
+}
+
+section.quiz .container .in_box .answer_btn a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-size: 22px;
+  width: 300px;
+  height: 50px;
+  background: #FF9519;
+  color: #fff;
+  font-family: "MangoDdobak_B";
+  border-radius: 10px;
+  text-align: center;
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+
+section.quiz .container .in_box .answer_btn p {
+  font-size: 15px;
+  color: #cfcfcf;
+  font-weight: 500;
+}
+
+/* answer */
+section.answer {
+  background: var(--main-color);
+}
+
+section.answer .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.answer .txt {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  line-height: 2;
+  color: #fff;
+  margin-top: 50px;
+}
+
+section.answer h2 {
+  background: #F4F0E3;
+  padding: 20px 40px 5px 40px;
+  border-radius: 20px 20px 0 0;
+  color: #3E2A2B;
+}
+
+section.answer h2::after {
+  display: none;
+}
+
+section.answer .txt p {
+  color: #3E2A2B;
+  font-weight: 500;
+}
+
+section.answer .txt p span {
+  background: #3E2A2B;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-radius: 50px;
+  margin: 0 5px;
+  color: #fff;
+}
+
+section.answer ul.reason {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+section.answer ul.reason li {
+  text-align: center;
+  width: 250px;
+  height: 330px;
+  border: 4px solid #F4F0E3;
+  background: linear-gradient(95deg, rgba(255, 255, 255, 0.40) 1.96%, rgba(255, 255, 255, 0.40) 99.09%);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+section.answer ul.reason li:hover {
+  transform: translateY(-35px);
+}
+
+section.answer ul.reason li p {
+  font-family: "MangoDdobak_B";
+  font-size: 30px;
+  font-weight: bold;
+  color: #3E2A2B;
+}
+
+/* endangered */
+section.endangered {
+  width: 100%;
+  height: 400vh;
+  display: flex;
+}
+
+section.endangered .left {
+  width: 600px;
+  height: 100vh;
+  background: var(--wrap-color);
+  position: sticky;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+section.endangered .left .deco_top {
+  background: url(../img/animals/endangered_left.png) no-repeat;
+  width: 100%;
+  height: 140px;
+}
+
+section.endangered .left h3 {
+  font-family: "yangjin";
+  font-size: 50px;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+section.endangered .left .thermometer {
+  margin-top: 70px;
+  margin-left: 155px;
+  display: flex;
+}
+
+section.endangered .left .thermometer .img {
+  position: relative;
+}
+
+section.endangered .left .thermometer .img .up {
+  width: 20px;
+  height: 50px;
+  background: #ff0000;
+  position: absolute;
+  left: 50.1%;
+  transform: translateX(-50%);
+  bottom: 110px;
+  border-radius: 50px 50px 0 0;
+}
+
+section.endangered .left .thermometer ul {
+  font-family: "MangoDdobak_R";
+  font-size: 26px;
+  font-weight: bold;
+  padding-top: 23px;
+  padding-left: 5px;
+}
+
+section.endangered .left .thermometer ul li {
+  padding-top: 36px;
+}
+
+section.endangered .left .thermometer ul li:nth-child(1) {
+  color: #1EA0FF;
+  padding-top: 0;
+}
+
+section.endangered .left .thermometer ul li:nth-child(2) {
+  color: #555555;
+}
+
+section.endangered .left .thermometer ul li:nth-child(3) {
+  color: #FF8A00;
+}
+
+section.endangered .left .thermometer ul li:nth-child(4) {
+  color: #7D3C00;
+}
+
+section.endangered .right {
+  width: 1320px;
+  height: 400vh;
+  border-left: 5px solid #86DBC7;
+}
+
+section.endangered .right article {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: url(../img/animals/article_bg.png) center center;
+}
+
+section.endangered .right article>.img {
+  width: 1220px;
+  height: 500px;
+  border-radius: 50px;
+  background: url(../img/animals/sea_otter_main.png) 1220px 500px;
+  transition: 0.5s;
+}
+
+section.endangered .right article>.img:hover {
+  background: url(../img/animals/sea_otter_hover.png) 1220px 500px;
+}
+
+section.endangered .right article .txt {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 30px 0;
+}
+
+section.endangered .right article .txt .character {
+  font-family: "MangoDdobak_B";
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.endangered .right article .txt .character .name {
+  display: flex;
+  align-items: center;
+}
+
+section.endangered .right article .txt .character .name p {
+  padding: 8px 13px 5px 13px;
+  background: #7D3C00;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 25px;
+}
+
+section.endangered .right article .txt .character .name h4 {
+  font-size: 28px;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+section.endangered .right article .txt .notice {
+  width: 55%;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 20px;
+  line-height: 2;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+
+section.endangered .right article#red_panda>.img {
+  background: url(../img/animals/red_panda_main.png) 1220px 500px;
+  transition: 0.7s;
+}
+
+section.endangered .right article#red_panda>.img:hover {
+  background: url(../img/animals/red_panda_hover.png) 1220px 500px;
+}
+
+section.endangered .right article#red_panda .txt .character .name p {
+  background: #FF8A00;
+}
+
+section.endangered .right article#forest_elephant>.img {
+  background: url(../img/animals/forest_elephant_main.png) 1220px 500px;
+  transition: 0.7s;
+}
+
+section.endangered .right article#forest_elephant>.img:hover {
+  background: url(../img/animals/forest_elephant_hover.png) 1220px 500px;
+}
+
+section.endangered .right article#forest_elephant .txt .character .name p {
+  background: #555555;
+}
+
+section.endangered .right article#polar_bear>.img {
+  background: url(../img/animals/polar_bear_main.png) 1220px 500px;
+  transition: 0.7s;
+}
+
+section.endangered .right article#polar_bear>.img:hover {
+  background: url(../img/animals/polar_bear_hover.png) 1220px 500px;
+}
+
+section.endangered .right article#polar_bear .txt .character .name p {
+  background: #1EA0FF;
+}
+
+/* media */
+section.media {
+  background: url(../img/animals/media_bg.png) center top;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+section.media .sp_block {
+  width: 100%;
+  height: 500px;
+}
+
+section.media .mymy {
+  width: 1190px;
+  height: 500px;
+}
+
+section.media ul li {
+  width: 350px;
+  height: 450px;
+  border: 3px solid #78B5A6;
+  border-radius: 20px;
+  background: #fff;
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+section.media ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section.media ul li .img {
+  width: 320px;
+  height: 210px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+section.media ul li .img img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+section.media ul li:hover .img img {
+  transform: scale(1.1);
+}
+
+section.media ul li .add {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+section.media ul li .add p {
+  font-size: 20px;
+  padding: 5px 15px;
+  background: #78B5A6;
+  color: #fff;
+  border-radius: 50px;
+}
+
+section.media ul li .add span {
+  font-size: 15px;
+  position: relative;
+  color: #666;
+}
+
+section.media ul li .add span::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #666;
+}
+
+section.media ul li .tit {
+  width: 85%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+section.media ul li .notice {
+  width: 85%;
+  font-size: 16px;
+  padding-bottom: 25px;
+}
+
+section.media .swiper-button-next {
+  font-size: 45px;
+  position: absolute;
+  top: 60%;
+  right: 15%;
+  color: #78B5A6;
+}
+
+section.media .swiper-button-next::after {
+  display: none;
+}
+
+section.media .swiper-button-prev {
+  font-size: 45px;
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  color: #78B5A6;
+}
+
+section.media .swiper-button-prev::after {
+  display: none;
+}
+
+section.media .mymy .swiper-pagination-bullet {
+  background: #78B5A6;
+}
+
+section.media .mymy .swiper-pagination-bullet-active {
+  width: 20px;
+  border-radius: 10px;
+}

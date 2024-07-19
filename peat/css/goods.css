@@ -1,0 +1,726 @@
+@charset "utf-8";
+
+body::-webkit-scrollbar {
+  width: 10px;
+  /* 스크롤바 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 10%;
+  /* 스크롤바 길이 */
+  background: #FFAA5C;
+  /* 스크롤바 색상 */
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--wrap-color);
+  /*스크롤바 뒷 배경 색상*/
+}
+
+
+/* donate_btn */
+
+.donate_btn {
+  position: fixed;
+  right: 75px;
+  bottom: 45px;
+  width: 125px;
+  height: 125px;
+  z-index: 100;
+}
+
+.donate_btn a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.donate_btn a img {
+  position: absolute;
+}
+
+.donate_btn a img.btn_fixed {
+  z-index: 1;
+}
+
+.donate_btn a img.btn_rotate {
+  animation: btnRotate 8s infinite linear;
+}
+
+@keyframes btnRotate {
+  0% {}
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 백그라운드 */
+.wrap {
+  background-image: url(../img/back/back.png);
+}
+
+/* header */
+
+header {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFDF8;
+}
+
+header .header_wrap {
+  width: 1674px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+header .header_wrap h1 {
+  width: 200px;
+  height: 67px;
+}
+
+header .header_wrap h1 a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+header .header_wrap nav {
+  width: 50%;
+  font-weight: 600;
+  border-radius: 50px;
+  background: #86DBC7;
+  color: #fff;
+  height: 70px;
+}
+
+header .header_wrap nav ul.gnb {
+  height: 100%;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  padding: 0 3px;
+}
+
+header .header_wrap nav ul.gnb li {
+  flex: 1;
+  height: 90%;
+  transition: .6s;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+header .header_wrap nav ul.gnb li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .header_wrap nav ul.gnb li.on,
+header .header_wrap nav ul.gnb li:hover {
+  background: #fff;
+  color: #111;
+}
+
+header .header_wrap ul.sub {
+  display: flex;
+  font-weight: 600;
+  font-size: 15px;
+  border: 2px solid var(--main-color);
+  border-radius: 50px;
+  width: 200px;
+  height: 45px;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #111;
+}
+
+header .header_wrap ul.sub li {
+  width: 90px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+header .header_wrap ul.sub li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: .5;
+  transition: .5s;
+}
+
+header .header_wrap ul.sub li a:hover {
+  opacity: 1;
+}
+
+header .header_wrap ul.sub li:first-child {
+  border-right: 2px solid #808080;
+}
+
+header .header_wrap ul.sub li:last-child {
+  color: var(--main-color);
+}
+
+/* banner */
+.banner {
+  width: 100%;
+  height: 900px;
+  /* background-color: #3CB296; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img {
+  width: 1623px;
+  height: 455px;
+}
+
+/* Content */
+/* sponsorship_purpose */
+main .sponsorship_purpose {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  align-items: center;
+}
+
+main .sponsorship_purpose .container {
+  display: flex;
+  width: 1360px;
+  height: 755px;
+  padding: 13px 132px;
+  flex-direction: column;
+  align-items: center;
+  gap: 67px;
+}
+
+main .sponsorship_purpose .txt_t {
+  display: flex;
+  width: 700px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 39px;
+}
+
+main .sponsorship_purpose h3 {
+  font-family: "MangoDdobak_B";
+  font-size: 70px;
+  text-align: center;
+  color: #FFAC75;
+}
+
+main .sponsorship_purpose p {
+  font-family: "MangoDdobak_B";
+  font-size: 30px;
+  text-align: center;
+  color: #FFBC8F;
+}
+
+main .sponsorship_purpose .container .sp {
+  width: 1096px;
+  height: 496px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  align-self: stretch;
+}
+
+main .sponsorship_purpose .container .cr_w {
+  width: 325px;
+  height: 497px;
+  background-color: #FFAA72;
+  border-radius: 45px;
+}
+
+main .sponsorship_purpose .container .sp_p {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 23px;
+}
+
+/* introduction */
+main .introduction {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  align-items: center;
+}
+
+main .introduction .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.swiper {
+  width: 100%;
+  height: 422px;
+  /*  margin: 20px auto; */
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  /* width: 100%; */
+  height: 100%;
+  object-fit: cover;
+}
+
+/* goods */
+main .goods {
+  width: 100%;
+  height: 3250px;
+  /* background-color: #297c69; */
+}
+
+main .goods .container {
+  width: 1360px;
+  height: 650px;
+  /* background-color: #40504c; */
+  align-items: center;
+}
+/* 케이스 */
+main .goods .container .img_boxc {
+  width: 771px;
+  height: 626px;
+  transition: 0.4s;
+  background: url(../img/Content_Image/p_e.png);
+}
+main .goods .container .img_boxc:hover{
+  background: url(../img/Content_Image/a_t.png);
+}
+/* 그립톡 */
+main .goods .container .img_boxg {
+  width: 700px;
+  height: 700px;
+  transition: 0.4s;
+  background: url(../img/Content_Image/griptok-01.png);
+}
+main .goods .container .img_boxg:hover{
+  background: url(../img/Content_Image/griptok-02.png);
+}
+/* 텀블러 */
+main .goods .container .img_boxt {
+  width: 744px;
+  height: 650px;
+  transition: 0.4s;
+  background: url(../img/Content_Image/tumbler.png);
+}
+/* 키링 */
+main .goods .container .img_boxk {
+  width: 648px;
+  height: 524px;
+  transition: 0.4s;
+  background: url(../img/Content_Image/key_ring.png);
+}
+main .goods .container .img_boxk:hover{
+  background: url(../img/Content_Image/key_ring_at.png);
+}
+/* 에코백 */
+main .goods .container .img_boxe {
+  width: 744px;
+  height: 626px;
+  transition: 0.4s;
+  background: url(../img/Content_Image/eco_bag.png);
+}
+main .goods .container .img_boxe:hover{
+  background: url(../img/Content_Image/te.png);
+}
+main .goods .container h3 {
+  font-family: "MangoDdobak_B";
+  font-size: 70px;
+  width: 570px;
+  margin-bottom: 40px;
+}
+
+main .goods .container p {
+  font-family: "MangoDdobak_B";
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #393939;
+}
+
+main .goods .container .p_b {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+main .goods .btn {
+  width: 189px;
+  height: 60px;
+}
+main .goods .btn a{
+  transition: 0.4s;
+}
+main .goods .btn a:hover {
+  background: #FFAA72;
+}
+
+main .goods a {
+  font-family: "MangoDdobak_B";
+  font-size: 40px;
+  border-radius: 30px;
+  background: #86DBC7;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+}
+
+main .goods .case .container {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+}
+
+main .goods .case .container h3 {
+  color: #99857A;
+}
+
+main .goods .case .txt_box {
+  width: 515px;
+  height: 304px;
+}
+
+main .goods .griptok .container {
+  display: flex;
+  gap: 132px;
+  justify-content: center;
+}
+
+main .goods .griptok .container h3 {
+  color: #F4853D;
+}
+
+main .goods .tumbler .container {
+  display: flex;
+  gap: 84px;
+  justify-content: center;
+}
+
+main .goods .tumbler .container h3 {
+  color: #95CAFF;
+}
+
+main .goods .key_ring .container {
+  display: flex;
+  gap: 142px;
+  justify-content: center;
+}
+
+main .goods .key_ring .container h3 {
+  color: #818181;
+}
+
+main .goods .eco_bag .container {
+  display: flex;
+  gap: 84px;
+  justify-content: center;
+}
+
+main .goods .eco_bag .container h3 {
+  background: linear-gradient(90deg, #A17F7E 4.09%, #FF832E 34.82%, #C7E3FF 65.56%, #989898 96.3%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* list */
+main .list {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  align-items: center;
+}
+
+main .list .container {
+  width: 100%;
+  height: 584px;
+}
+
+main .list .container .lsit_product {
+  width: 457px;
+  height: 584px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .list .container .lsit_product .img_frame {
+  width: 457px;
+  height: 470px;
+  border-radius: 27.826px;
+  position: relative;
+}
+
+main .list .container .lsit_product .top_frame {
+  width: 336px;
+  height: 364px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-bottom: 10px;
+  transform: translateX(-50%);
+  border-radius: 28px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .list .container .lsit_product img{
+  transition: 0.4s;
+}
+main .list .container .lsit_product img:hover{
+  transform: scale(1.2);
+}
+main .list .container .lsit_product .on {
+  background-image: url(../img/Content_Image/list_01.png);
+}
+
+main .list .container .lsit_product .tow {
+  background-image: url(../img/Content_Image/list_02.png);
+}
+
+main .list .container .lsit_product .three {
+  background-image: url(../img/Content_Image/list_03.png);
+}
+
+main .list .container .lsit_product .four {
+  background: no-repeat center bottom url(../img/Content_Image/list_04.png);
+}
+
+main .list .container .lsit_product .list_p {
+  display: inline-flex;
+  padding: 18.782px 59px 17.218px 58px;
+  justify-content: center;
+  align-items: center;
+  font-family: "MangoDdobak_B";
+  color: #656565;
+  font-size: 30px;
+}
+
+main .list .container .lsit_product .list_btn {
+  display: flex;
+  width: 93px;
+  height: 41px;
+  padding: 3px 12px 2px 13px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background: #86DBC7;
+  color: #FFF;
+  font-family: "MangoDdobak_B";
+  font-size: 30px;
+  transition: 0.4s;
+}
+
+main .list .container .lsit_product .list_btn:hover {
+  background-color: #FFAA72;
+}
+/* footer */
+
+
+footer {
+  width: 100%;
+  height: 900px;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFDF8;
+}
+
+footer .count {
+  width: 100%;
+  height: 182px;
+  padding-right: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer .count .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .count .top .line {
+  width: 1092px;
+  height: 8px;
+  border-radius: 0px 4px 4px 0px;
+  background-color: var(--main-color);
+}
+
+footer .count .top p {
+  font-size: 48px;
+  color: #777;
+  font-family: "MangoDdobak_R";
+}
+
+footer .count .bottom {
+  font-size: 128px;
+  color: #BCBCBC;
+  align-self: flex-end;
+}
+
+footer .count .bottom p {
+  height: 128px;
+  font-family: "MangoDdobak_R";
+}
+
+
+footer .phrase {
+  height: 274px;
+  border-bottom: 10px solid var(--main-color);
+  text-align: center;
+}
+
+footer .phrase strong {
+  font-family: "yangjin";
+  font-size: 198px;
+  color: var(--main-color);
+  font-weight: 100;
+  letter-spacing: -6px;
+}
+
+footer .container {
+  height: 224px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer .container .info {
+  height: 124px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
+footer .container .info .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .container .info .top ul {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+footer .container .info .top ul.menu {
+  width: 694px;
+}
+
+footer .container .info .top ul.menu li {
+  height: 40px;
+  padding: 0 3px;
+  line-height: 40px;
+  color: #3CB296;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer .container .info .top ul.menu li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+footer .container .info .top ul.menu li:hover {
+  border-bottom: 2px solid #3CB296;
+}
+
+footer .container .info .top ul.sns {
+  width: 192px;
+}
+
+footer .container .info .top ul.sns li {
+  opacity: .5;
+  transition: .5s;
+}
+
+footer .container .info .top ul.sns li:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+footer .container .info .top ul.sns li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+footer .container .info .top ul li {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+footer .container .info .bottom {
+  width: 700px;
+  height: 48px;
+  align-self: center;
+}
+
+footer .container .info .bottom ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+
+footer .container .info .bottom ul li {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  color: #3CB296;
+  padding: 0 7px;
+}
+
+footer .container .info .bottom ul li.right {
+  border-right: 2px solid var(--main-color);
+}
+
+footer .container .name_copy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name_copy p {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #777;
+}
