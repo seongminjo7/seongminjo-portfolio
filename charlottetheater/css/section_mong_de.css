@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+.mong_de {
+  width: 100%;
+  height: 4346px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  background: var(--green_gradiant, linear-gradient(180deg, #205946 0%, #092F24 100%));
+}
+
+.mong_de .door {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.mong_de .door>.left {
+  position: absolute;
+  left: 41.25%;
+  top: 315px;
+  transform: translateX(-41.25%);
+}
+
+.mong_de .door>.right {
+  position: absolute;
+  right: 41.25%;
+  top: 315px;
+  transform: translateX(41.25%);
+}
+
+.mong_de .door>.in {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.mong_de .scroll {
+  width: 1206px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mong_de .scroll .reservation {
+  width: 90%;
+  height: 955px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mong_de .scroll .reservation h2 {
+  width: 55%;
+  margin-bottom: 26px;
+}
+
+.mong_de .scroll .reservation h2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mong_de .scroll .reservation ul {
+  width: 997px;
+  height: 619px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mong_de .scroll .reservation ul li {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.mong_de .scroll .reservation ul li.package {
+  background-image: url(../img/package.png);
+}
+
+.mong_de .scroll .reservation ul li.general {
+  background-image: url(../img/general.png);
+}
+
+.mong_de .scroll .reservation ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.mong_de .scroll .reservation ul li .txt {
+  color: #fff;
+  position: absolute;
+  top: 40px;
+  left: 60px;
+}
+
+.mong_de .scroll .reservation ul li .txt p {
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+}
+
+.mong_de .scroll .menu {
+  width: 98%;
+  color: #fff;
+}
+
+.mong_de .scroll .menu ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mong_de .scroll .menu ul li {
+  width: 100%;
+  height: 340px;
+  display: flex;
+  margin-top: 126px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mong_de .scroll .menu ul li .txt_box {
+  width: 700px;
+  height: 260px;
+  position: relative;
+}
+
+.mong_de .scroll .menu ul li .txt_box .txt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.mong_de .scroll .menu ul li .txt_box h3 {
+  width: 578px;
+  font-family: "RockSalt";
+  font-weight: normal;
+  font-size: 42px;
+}
+
+.mong_de .scroll .menu ul li .txt_box p {
+  font-family: "OhsquareAir";
+  font-size: 35px;
+}
+
+.mong_de .scroll .menu ul li .txt_box img {
+  width: 100%;
+  height: 100%;
+}

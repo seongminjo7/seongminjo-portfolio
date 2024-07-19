@@ -1,0 +1,36 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Rock+Salt&display=swap');
+
+/* Hahmlet */
+.hahmlet{
+  font-family: "Hahmlet", serif;
+}
+
+/* NotoSansKR */
+.notosans{
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* RockSalt */
+@font-face {
+  font-family: "RockSalt";
+  src: local("RockSalt-Regular"),
+    url("../font/RockSalt-Regular.woff2") format("woff2"),
+    url("../font/RockSalt-Regular.ttf") format("truetype");
+}
+
+/* Cafe24Ohsquare */
+@font-face {
+  font-family: "Ohsquare";
+  src: local("Cafe24Ohsquare"),
+    url("../font/Cafe24Ohsquare-v2.0.woff2") format("woff2"),
+    url("../font/Cafe24Ohsquare-v2.0.ttf") format("truetype");
+}
+
+/* Cafe24OhsquareAir */
+@font-face {
+  font-family: "OhsquareAir";
+  src: local("Cafe24OhsquareAir"),
+    url("../font/Cafe24OhsquareAir-v2.0.woff2") format("woff2"),
+    url("../font/Cafe24OhsquareAir-v2.0.ttf") format("truetype");
+}

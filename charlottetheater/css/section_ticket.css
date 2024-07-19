@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+.ticket {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../img/ticket_bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ticket .t_icon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.ticket .t_icon img {
+  position: absolute;
+}
+
+.ticket .t_icon img.wiginabox_wfill {
+  left: 111px;
+  top: 97px;
+  transform: rotate(-20deg);
+}
+
+.ticket .t_icon img.gnosis_wfill {
+  left: 78px;
+  bottom: 170px;
+  transform: rotate(-20deg);
+}
+
+.ticket .t_icon img.bear_wline {
+  left: 50%;
+  bottom: 202px;
+  transform: translateX(-50%) rotate(-20deg);
+}
+
+.ticket .t_icon img.wig_wline {
+  left: 60%;
+  top: 104px;
+  transform: translateX(-40%) rotate(-20deg);
+}
+
+.ticket .t_icon img.bear_wfill {
+  right: 90px; top: 182px;
+  transform: rotate(35deg);
+}
+
+.ticket .t_icon img.thelove_wfill {
+  right: 25px; bottom: 225px;
+  transform: rotate(31deg);
+}
+
+.ticket .paper_bg2top {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ticket .paper_bg2bottom {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.ticket .t_left {
+  width: 877px;
+  height: 728px;
+  display: flex;
+}
+
+.ticket .t_left .poster {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.ticket .t_left .poster ul {
+  width: 100%;
+  height: auto;
+}
+
+.ticket .t_left .poster ul li {
+  width: 410px;
+  height: 100%;
+}
+
+.ticket .t_left .poster ul li img {
+  width: 410px;
+  height: 100%;
+}
+
+.ticket .t_left .poster .swiper-pagination {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 316px;
+  height: 106px;
+  background-image: url(../img/poster_list_btn_bg.png);
+  font-size: 30px;
+  line-height: 106px;
+  text-align: center;
+  font-family: "RockSalt";
+  color: #F1B82D;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+.ticket .t_right {
+  width: 695px;
+  height: 779px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ticket .t_right h2 {
+  width: 420px;
+  height: 210px;
+}
+
+.ticket .t_right h2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ticket .t_right .info_btn {
+  width: 695px;
+  height: 464px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket .t_right .info_btn .info {
+  position: relative;
+  width: 695px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/musical_info_bg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.ticket .t_right .info_btn .info .txt {
+  width: 532px;
+  height: 195px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket .t_right .info_btn .info .txt strong {
+  font-family: "RockSalt";
+  font-size: 24px;
+  color: #FFDC3E;
+  letter-spacing: 1px;
+}
+
+.ticket .t_right .info_btn .info .txt p {
+  font-family: "OhsquareAir";
+  font-size: 24px;
+  color: #fff;
+}
+
+.ticket .t_right .info_btn .info .txt .actor p:nth-child(2) {
+  margin-left: 65px;
+}
+
+.ticket .t_right .info_btn .info .txt .running_time {
+  text-align: center;
+}
+
+.ticket .t_right .info_btn .btn {
+  width: 260px;
+  height: 88px;
+  background-image: url(../img/ticket_btn_bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: "RockSalt";
+  font-size: 24px;
+  font-weight: bold;
+  color: #F1B82D;
+  letter-spacing: 10px;
+  line-height: 88px;
+  text-align: center;
+}

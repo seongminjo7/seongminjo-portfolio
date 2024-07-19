@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+.review {
+  width: 100%;
+  height: 1900px;
+  background: #83161B;
+  position: relative;
+  padding: 0 9;
+}
+
+.review .review_top {
+  height: 256px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background: #83161B;
+  z-index: 1;
+  background-image: url(../img/review_paper_bg.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+
+.review .review_top h2 {
+  width: 598px;
+  height: 163px;
+  box-sizing: border-box;
+  border: 10px solid #000;
+  line-height: 143px;
+  font-weight: bold;
+  font-size: 115px;
+  text-align: center;
+  align-self: flex-end;
+  margin-left: 93px;
+  margin-bottom: 20px;
+}
+
+.review .review_top ul.list {
+  align-self: flex-end;
+  display: flex;
+  margin-right: 93px;
+  margin-bottom: 20px;
+}
+
+.review .review_top ul.list li {
+  background: #000;
+  padding: 0 23px;
+  font-size: 24px;
+  color: #fff;
+  margin-left: 10px;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.review .review_top ul.list li.on {
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.review_bottom {
+  width: 100%;
+  height: 1900px;
+}
+
+.review_bottom ul.review_list {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.review_bottom ul.review_list>li {
+  width: 409px;
+}
+
+.review_bottom ul.review_list li ul.list {
+  margin-top: 28px;
+}
+
+.review_bottom ul.review_list li ul.list li {
+  background: #fff;
+  margin-bottom: 33px;
+  display: flex;
+  flex-direction: column;
+}
+
+.review_bottom ul.review_list li ul.list li a .img_box {
+  overflow: hidden;
+  position: relative;
+}
+
+.review_bottom ul.review_list li ul.list li a .img_box>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review_bottom ul.review_list li ul.list li a .img_box .like_comments {
+  font-family: "Hahmlet", serif;
+  font-size: 16px;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 125px;
+  height: 34px;
+  background: #fff;
+  right: 0;
+}
+
+.review_bottom ul.review_list li ul.list li a .img_box .like_comments img {
+  margin-right: 4px;
+}
+
+.review_bottom ul.review_list li ul.list li a .img_box .like_comments .like {
+  padding-right: 13px;
+  border-right: 1px solid #000;
+}
+
+/* txt_box */
+
+.review_bottom ul.review_list li ul.list li a .txt_box {
+  width: 100%;
+  height: 113px;
+  font-family: "Hahmlet", serif;
+  font-size: 16px;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

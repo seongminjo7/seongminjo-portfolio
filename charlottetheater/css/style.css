@@ -1,0 +1,375 @@
+@charset "utf-8";
+
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 74px;
+  position: absolute;
+  background: rgba(0, 0, 0, .22);
+  display: flex;
+  color: #fff;
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+  transition: .4s;
+}
+
+header:hover {
+  background: rgba(0, 0, 0, .5);
+}
+
+header h1 {
+  position: relative;
+  z-index: 11;
+  width: 126px;
+  height: 48px;
+  margin-left: 150px;
+  flex-shrink: 0;
+}
+
+header h1 a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+header h1 a img {
+  width: 100%;
+  height: 100%;
+}
+
+header nav {
+  width: 60%;
+  height: 54px;
+  text-align: center;
+}
+
+header .nav_bg {
+  position: absolute;
+  top: 74px;
+  left: 0;
+  width: 100%;
+  height: 330px;
+  background: rgba(0, 0, 0, .38);
+  display: none;
+}
+
+header nav ul.gnb {
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 11;
+}
+
+header nav ul.gnb>li {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+header nav ul.gnb>li>a {
+  width: 100%;
+  height: 54px;
+  line-height: 54px;
+  display: block;
+}
+
+header nav ul.gnb>li>ul.sub {
+  font-family: "OhsquareAir";
+  font-size: 20px;
+  font-weight: normal;
+  padding-top: 30px;
+  display: none;
+}
+
+
+header nav ul.gnb>li>ul.sub>li {
+  width: 100%;
+  height: 50px;
+  transition: .3s;
+}
+
+header nav ul.gnb>li:hover>ul.sub>li {
+  background: rgba(255, 255, 255, .6);
+  color: #1E046B;
+}
+
+header nav ul.gnb>li>ul.sub>li:first-child {
+  padding-top: 13px;
+}
+
+header nav ul.gnb>li:hover>ul.sub>li:first-child::before {
+  content: '';
+  width: 100%;
+  height: 6px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 64px;
+}
+
+header nav ul.gnb>li>ul.sub>li:last-child {
+  padding-bottom: 13px;
+}
+
+header nav ul.gnb>li>ul.sub>li>a {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+}
+
+header nav ul.gnb>li>ul.sub>li:hover>a {
+  background: #fff;
+}
+
+header .m_nav {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 90px;
+  transition: .4s;
+  display: none;
+}
+
+header .m_nav ul.m_gnb {
+  width: 100%;
+  height: auto;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 20px 0 90px 100px;
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, .7);
+}
+
+header .m_nav ul.m_gnb>li {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+header .m_nav ul.m_gnb>li>ul.m_sub {
+  font-family: "OhsquareAir";
+  font-size: 20px;
+  font-weight: normal;
+  padding-top: 20px;
+  display: flex;
+}
+
+header .m_nav ul.m_gnb>li>ul.m_sub>li {
+  width: 155px;
+  margin-right: 10px;
+}
+
+header .m_nav_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 100%;
+  background: rgba(0, 0, 0, .38);
+}
+
+header .login_join {
+  position: relative;
+  z-index: 11;
+  font-weight: normal;
+  font-size: 20px;
+  display: flex;
+  width: 218px;
+  height: 34px;
+  margin-right: 157px;
+}
+
+header .login_join div a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header .login_join div a img {
+  width: 24px;
+  height: 24px;
+  padding-left: 9px;
+}
+
+header .login_join .login {
+  width: 89px;
+  flex-shrink: 0;
+}
+
+header .login_join .join {
+  width: 108px;
+  flex-shrink: 0;
+  margin-left: 21px;
+}
+
+header .m_nav_btn {
+  display: none;
+}
+
+header .ham {
+  width: 40px;
+  height: 40px;
+  margin-right: 50px;
+  display: none;
+  cursor: pointer;
+}
+
+header .ham.on,
+.hamclose.on {
+  display: block;
+}
+
+header .ham img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+header .hamclose {
+  width: 40px;
+  height: 40px;
+  margin-right: 50px;
+  display: none;
+  cursor: pointer;
+}
+
+header .hamclose img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* footer */
+footer {
+  width: 100%;
+  height: 320px;
+  background: #250A0A;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px 176px;
+  overflow: hidden;
+}
+
+footer .f_top {
+  width: 100%;
+  height: 76px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .f_top h1 {
+  width: 199px;
+  height: 100%;
+  margin-right: 10px;
+}
+
+footer .f_top h1 a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .f_top ul.f_menu {
+  flex: 1;
+  height: 42px;
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+
+footer .f_top ul.f_menu li {
+  flex: 1;
+  flex-shrink: 0;
+  margin: 0 5px;
+}
+
+footer .f_top ul.f_menu li:first-child {
+  margin-left: 0;
+}
+
+footer .f_top ul.f_menu li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  line-height: 42px;
+}
+
+footer .line {
+  background-image: linear-gradient(to right, #fff 33%,
+      rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 20px 3px;
+  /*점선 간격 수정*/
+  width: 100%;
+  height: 4px;
+
+}
+
+footer .f_bottom {
+  width: 100%;
+  align-self: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .f_bottom .info p {
+  float: left;
+  border-right: 1px solid #fff;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+footer .f_bottom .info p.clear {
+  clear: both;
+}
+
+footer .f_bottom .info p.bn {
+  border: none;
+}
+
+footer .f_bottom ul.sns {
+  width: 279px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+
+footer .copy {
+  font-size: 14px;
+  font-weight: bold;
+}
