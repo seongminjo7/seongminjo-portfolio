@@ -1,0 +1,234 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&family=Nanum+Gothic&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Schibsted Grotesk */
+.s_grotesk {
+  font-family: "Schibsted Grotesk", sans-serif;
+}
+
+/* Nanum Gothic */
+.n_gothic {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+body {
+  font-family: "Schibsted Grotesk", sans-serif;
+}
+
+
+/* landing page font */
+
+
+/* Hahmlet */
+.hahmlet {
+  font-family: "Hahmlet", serif;
+}
+
+/* LaundryGo */
+@font-face {
+  font-family: "LaundryGo_B";
+  src: local("런드리고딕 Bold)"),
+    url("../font/런드리고딕\ Bold.woff") format("woff"),
+    url("../font/런드리고딕\ Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "LaundryGo_R";
+  src: local("런드리고딕 Regular)"),
+    url("../font/런드리고딕\ Regular.woff") format("woff"),
+    url("../font/런드리고딕\ Regular.ttf") format("truetype");
+}
+
+/* char */
+/* RockSalt */
+@font-face {
+  font-family: "RockSalt";
+  src: local("RockSalt-Regular"),
+    url("../font/RockSalt-Regular.woff2") format("woff2"),
+    url("../font/RockSalt-Regular.ttf") format("truetype");
+}
+
+/* morning */
+/* GyeonggiTitle */
+.gyeonggi_B {
+  font-family: 'GyeonggiTitle_B';
+}
+
+@font-face {
+  font-family: 'GyeonggiTitle_B';
+  src: url('../font/경기천년제목_Bold.ttf') format('truetype');
+}
+
+.gyeonggi_M {
+  font-family: 'GyeonggiTitle_M';
+}
+
+@font-face {
+  font-family: 'GyeonggiTitle_M';
+  src: url('../font/경기천년제목_Medium.ttf') format('truetype');
+}
+
+.gyeonggi_L {
+  font-family: 'GyeonggiTitle_L';
+}
+
+@font-face {
+  font-family: 'GyeonggiTitle_L';
+  src: url('../font/경기천년제목_Light.ttf') format('truetype');
+}
+
+/* GamtanRoad */
+.gamtan_b {
+  font-family: 'GamtanRoad_B';
+}
+
+@font-face {
+  font-family: 'GamtanRoad_B';
+  src: url('../font/감탄로드돋움체\ Bold.ttf') format('truetype');
+}
+
+.gamtan_r {
+  font-family: 'GamtanRoad_R';
+}
+
+@font-face {
+  font-family: 'GamtanRoad_R';
+  src: url('../font/감탄로드돋움체\ Regular.ttf') format('truetype');
+}
+
+/* MangoDdobak */
+.manggo_b {
+  font-family: 'MangoDdobak_B';
+}
+
+@font-face {
+  font-family: 'MangoDdobak_B';
+  src: url('../font/MangoDdobak-B\(ttf\).ttf') format('truetype');
+}
+
+.manggo_r {
+  font-family: 'MangoDdobak_R';
+}
+
+@font-face {
+  font-family: 'MangoDdobak_R';
+  src: url('../font/MangoDdobak-R\(ttf\).ttf') format('truetype');
+}
+
+.manggo_l {
+  font-family: 'MangoDdobak_L';
+}
+
+@font-face {
+  font-family: 'MangoDdobak_L';
+  src: url('../font/MangoDdobak-L\(ttf\).ttf') format('truetype');
+}
+
+/* IBMPlexSans */
+.imbplex_sb {
+  font-family: 'IBMPlexSans_SB';
+}
+
+@font-face {
+  font-family: 'IBMPlexSans_SB';
+  src: url('../font/IBMPlexSansKR-SemiBold.ttf') format('truetype');
+}
+
+.imbplex_r {
+  font-family: 'IBMPlexSans_R';
+}
+
+@font-face {
+  font-family: 'IBMPlexSans_R';
+  src: url('../font/IBMPlexSansKR-Regular.ttf') format('truetype');
+}
+
+
+
+
+
+/* Cafe24Ssurround, Air */
+
+.surround_n {
+  font-family: "Cafe24Ssurround";
+}
+
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: local("Cafe24Ssurround-v2.0"),
+    url("../font/Cafe24Ssurround-v2.0.woff2") format("woff"),
+    url("../font/런드리고딕\ Bold.ttf") format("truetype");
+}
+
+.surround_a {
+  font-family: "Cafe24Ssurround_Air";
+}
+
+@font-face {
+  font-family: "Cafe24Ssurround_Air";
+  src: local("Cafe24SsurroundAir-v1.1s)"),
+    url("../font/Cafe24SsurroundAir-v1.1.woff2") format("woff"),
+    url("../font/Cafe24SsurroundAir-v1.1.ttf") format("truetype");
+}
+
+
+/* Freesentation */
+
+.freesen_b {
+  font-family: "FreesentationB";
+}
+
+@font-face {
+  font-family: "FreesentationB";
+  src: local("Freesentation-7Bold"),
+    url("../font/Freesentation-7Bold.ttf") format("truetype");
+}
+
+.freesen_r {
+  font-family: "FreesentationR";
+}
+
+@font-face {
+  font-family: "FreesentationR";
+  src: local("Freesentation-4Regular"),
+    url("../font/Freesentation-4Regular.ttf") format("truetype");
+}
+
+
+
+
+
+/* 수정 */
+
+
+/* NPSfont */
+
+@font-face {
+  font-family: 'NPSfont_EB';
+  src: local("NPSfont_extrabold"),
+    /* url("../font/NPSfont_bold.ttf") format("woff"), */
+    url("../font/NPSfont_extrabold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'NPSfont_B';
+  src: local("NPSfont_bold"),
+    /* url("../font/NPSfont_bold.ttf") format("woff"), */
+    url("../font/NPSfont_bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NPSfont_R";
+  src: local("NPSfont_regular"),
+    /* url("../font/NPSfont_regular.ttf") format("woff"), */
+    url("../font/NPSfont_regular.ttf") format("truetype");
+}
+
+
+/* Hanbit */
+@font-face {
+  font-family: "Hanbit";
+  src: local("KCC-Hanbit"),
+    url("../font/KCC-Hanbit.woff2") format("woff"),
+    url("../font/KCC-Hanbit.ttf") format("truetype");
+}

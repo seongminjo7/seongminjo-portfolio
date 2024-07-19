@@ -1,0 +1,140 @@
+@media screen and (max-width:1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .bgicon img {
+    transform: scale(.7);
+  }
+
+  body {
+    width: 1024px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+
+  .site_btn {
+/*     position: absolute;
+    top: 1100px; */
+    position: fixed;
+    width: 245px;
+    height: 53px;
+  }
+
+  header {
+    padding-left: 0;
+    margin-left: -50px;
+    transform: scale(.8);
+  }
+
+  .main_visual h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 70px;
+  }
+
+  .main_visual .desktop .desktop_info,
+  .main_visual .teblet .teblet_info,
+  .main_visual .mobile .mobile_info {
+    display: none;
+  }
+
+  .main_visual .desktop {
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -40%);
+  }
+
+  .main_visual .mobile {
+    display: flex;
+    top: 78%;
+    left: 10%;
+    transform: translate(-10%, -78%);
+  }
+
+  .site_map {
+    height: 922px;
+  }
+
+  .site_map h2 {}
+
+  .menu {
+    transform: scale(.6);
+    height: 1066px;
+  }
+
+
+  .style_guide {
+    height: 2000px;
+  }
+
+  .style_guide h2 {
+    margin-bottom: 50px;
+  }
+
+  .style_guide .font_style {
+    width: 70%;
+    height: 1600px;
+    justify-content: space-evenly;
+  }
+
+  .style_guide .font_style .font {
+    margin-top: 40px;
+    flex-direction: column;
+    height: 650px;
+    justify-content: space-between;
+  }
+
+  .style_guide .font_style .font .hahmlet {
+    height: 50%;
+  }
+
+  .style_guide .font_style .typo img {
+    transform: scale(.6);
+    margin: 0;
+  }
+
+  .style_guide .font_style .typo1 {
+    left: -120px;
+    bottom: 240px;
+  }
+
+  .style_guide .font_style .typo2 {
+    bottom: -90px;
+  }
+
+  .style_guide .font_style .typo2 img {
+    margin-left: 60px;
+    margin-bottom: 0;
+  }
+
+  .style_guide .color_style {
+    width: 70%;
+    height: 750px;
+  }
+
+  .style_guide .color_style h3 {
+    margin-bottom: 60px;
+  }
+
+  .style_guide .color_style .colors {
+    width: 110%;
+    height: 800px;
+  }
+
+  .style_guide .color_style .color1 {
+    /* height: 200px; */
+    display: flex;
+    flex-direction: column-reverse;
+    right: -120px;
+    bottom: -100px;
+  }
+
+  .style_guide .color_style .color1 img {
+    transform: scale(.5) scaleY(-1);
+    margin-left: 100px;
+  }
+}

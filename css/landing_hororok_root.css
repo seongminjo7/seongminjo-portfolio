@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+:root {
+  --main-color: #F26620;
+  --sitemap-h2:rgba(255, 234, 138, 0.603);
+  --sitemap-bg:rgba(255, 234, 138, 0.603);
+  --sitemap-dtborder:#1FDEE0;
+  --sitemap-dd:#7CDCDD;
+  --sitemap-ddon:#665080;
+  --styleguide_h2:#E76C69;
+  --conh2-bg:#FFC656;
+  --conh2-color: #5B2801; 
+}
