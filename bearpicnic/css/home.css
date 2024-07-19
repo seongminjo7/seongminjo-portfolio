@@ -1,0 +1,268 @@
+@charset "utf-8";
+
+.wrap {
+  background: url(../img/home/wall.png) no-repeat right bottom;
+  background-color: #C0EFFF;
+}
+
+.bear {
+  width: 653px;
+  height: 752px;
+  position: absolute;
+  bottom: 0;
+  right: 1200px;
+}
+
+.bear img {
+  position: absolute;
+}
+
+.bear img.bear_body {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.bear img.eye_close {
+  right: 95px;
+  top: 234px;
+}
+
+.bear img.eye_open {
+  top: 226px;
+  right: 85px;
+}
+
+.bear img.eye_drink {
+  top: 226px;
+  right: 89px;
+}
+
+.bear img.eye {
+  display: none;
+}
+
+.bear img.eye.on {
+  display: block;
+}
+
+.bear img.mouth {
+  top: 327px;
+  right: 101px;
+}
+
+.bear .cup_arm {
+  position: absolute;
+  width: 490px;
+  height: 236px;
+  left: 205px;
+  bottom: 45px;
+  z-index: 5;
+  transform-origin: left bottom;
+}
+
+.bear .cup_arm.on {
+  animation: drinkAni 4s;
+}
+
+@keyframes drinkAni {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(-15deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.bear .cup_arm .cup {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.bear .cup_arm .smoke {
+  position: absolute;
+  right: 34px;
+  top: 0;
+  width: 102px;
+  height: 61px;
+  animation: smokeAni 4s ease-in-out infinite;
+}
+
+@keyframes smokeAni {
+  0% {
+    background-image: url(../img/home/smoke1.png);
+  }
+
+  50% {
+    background-image: url(../img/home/smoke2.png);
+  }
+
+  100% {
+    background-image: url(../img/home/smoke1.png);
+  }
+}
+
+.table {
+  position: absolute;
+  bottom: 0;
+  right: 359px;
+  z-index: 1;
+}
+
+.mouse_bread {
+  width: 400px;
+  height: 212px;
+  position: absolute;
+  right: 500px;
+  bottom: 23px;
+}
+
+.mouse_bread .mouse {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.mouse_bread .mouse.on {}
+
+.mouse_bread .bread_bite {
+  position: absolute;
+  left: 18px;
+  top: 35px;
+  z-index: 5;
+}
+
+.plate {
+  position: absolute;
+  bottom: 25px;
+  right: 654px;
+  z-index: 2;
+}
+
+.bread {
+  position: absolute;
+  bottom: 67px;
+  right: 760px;
+  z-index: 6;
+}
+
+.clock {
+  width: 269px;
+  height: 428px;
+  position: absolute;
+  background: url(../img/home/clock.png) no-repeat;
+  z-index: -1;
+  right: 1500px;
+  bottom: 555px;
+}
+
+.clock img {
+  position: absolute;
+}
+
+.clock .clock_door {
+  left: 80px;
+  top: 66px;
+  display: none;
+}
+
+.clock .clock_door.on {
+  display: block;
+}
+
+.clock .bird {
+  top: 45px;
+  left: 75px;
+  display: none;
+}
+.clock .bird.on{
+  display: block;
+  animation: birdAni 2s ease-in-out;
+}
+@keyframes birdAni{
+  0%{transform: scale(.3);}
+  25%{transform: scale(1.1);}
+  50%{transform: scale(.7);}
+  70%{transform: scale(1.3);}
+  100%{transform: scale(0);}
+}
+
+.clock .hand {
+  transform-origin: center bottom;
+}
+
+.clock .middle {
+  left: 131px;
+  top: 183px;
+  z-index: 2;
+}
+
+.clock .hour {
+  left: 131px;
+  bottom: 240px;
+  animation: handAni 10800s linear infinite;
+  z-index: 1;
+}
+
+.clock .min {
+  left: 131px;
+  bottom: 240px;
+  animation: handAni 180s linear infinite;
+    z-index: 1;
+}
+
+.clock .sec {
+  left: 133px;
+  bottom: 240px;
+  animation: handAni 3s linear infinite;
+}
+@keyframes handAni{
+  0%{}
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+.picnic {
+  position: absolute;
+  right: 18px;
+  bottom: 50px;
+  z-index: 100;
+  animation: picnicani 1s infinite;
+  display: block;
+  cursor: pointer;
+}
+
+@keyframes picnicani {
+  0% {
+    /* transform: rotate(20deg); */
+  }
+
+  15% {
+    transform: rotate(-10deg);
+  }
+
+  30% {
+    transform: rotate(10deg) scale(1.09);
+  }
+
+  45% {
+    transform: rotate(-5deg);
+  }
+
+  55% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}

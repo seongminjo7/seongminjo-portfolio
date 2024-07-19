@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+.wrap {
+  background: url(../img/loading/bg.png) no-repeat center bottom;
+  background-color: #C0EFFF;
+}
+
+.flower {
+  width: 1708px;
+  height: 164px;
+  position: absolute;
+  bottom: 540px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flower img {
+  transform-origin: center bottom;
+}
+
+.flower img:nth-child(odd) {
+  animation: flw_odd 3s ease-in-out infinite;
+}
+
+@keyframes flw_odd {
+  0% {
+    transform: rotate(20deg);
+  }
+
+
+  50% {
+    transform: rotate(-20deg);
+  }
+
+
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+.flower img:nth-child(even) {
+  animation: flw_even 3s ease-in-out infinite;
+}
+
+@keyframes flw_even {
+  0% {
+    transform: rotate(-20deg);
+  }
+
+
+  50% {
+    transform: rotate(20deg);
+  }
+
+
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+.mouse_move {
+  width: 207px;
+  height: 205px;
+  position: absolute;
+  bottom: -30px;
+  right: -50px;
+  cursor: pointer;
+}
+
+.mouse {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: mouseAni .5s infinite;
+  display: block;
+  transition: .5s;
+}
+
+.mouse_move:hover .mouse {
+  animation-play-state: paused;
+  bottom: -180px;
+  right: -160px;
+}
+
+@keyframes mouseAni {
+  0% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+.bear {
+  position: absolute;
+  left: -241px;
+  bottom: 400px;
+  width: 100%;
+  height: 323px;
+  animation: bearAni 16s linear;
+  z-index: 2;
+}
+
+@keyframes bearAni {
+  0% {
+    background-image: url(../img/loading/25_bear.png);
+    background-repeat: no-repeat;
+  }
+
+  10% {
+    background-image: url(../img/loading/50_bear.png);
+    background-repeat: no-repeat;
+  }
+
+  20% {
+    background-image: url(../img/loading/75_bear.png);
+    background-repeat: no-repeat;
+  }
+
+  30% {
+    background-image: url(../img/loading/100_bear.png);
+    background-repeat: no-repeat;
+  }
+
+  40% {
+    background-image: url(../img/loading/25_bear.png);
+    background-repeat: no-repeat;
+  }
+
+  50% {
+    background-image: url(../img/loading/50_bear.png);
+    background-repeat: no-repeat;
+  }
+  60% {
+    background-image: url(../img/loading/75_bear.png);
+    background-repeat: no-repeat;
+  }
+
+  70% {
+    background-image: url(../img/loading/100_bear.png);
+    background-repeat: no-repeat;
+  }
+
+  80% {
+    background-image: url(../img/loading/25_bear.png);
+    background-repeat: no-repeat;
+  }
+
+  90% {
+    background-image: url(../img/loading/50_bear.png);
+    background-repeat: no-repeat;
+  }
+  100% {
+    background-image: url(../img/loading/75_bear.png);
+    background-repeat: no-repeat;
+    transform: translateX(120%);
+  }
+}
+
+.cloud {
+  width: 100%;
+  height: 312px;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  display: flex;
+  animation: cloud 30s linear infinite;
+}
+
+.cloud img {
+  position: absolute;
+}
+
+@keyframes cloud {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-100%)
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+
+.cloud1 {
+  left: 160px;
+}
+
+.cloud2 {
+  left: 720px;
+}
+
+.cloud3 {
+  left: 1250px;
+}
+
+.cloud4 {
+  left: 1700px;
+}
+
+.cloud5 {
+  left: 2200px;
+}
+
+.cloud6 {
+  left: 2700px;
+}
+
+.cloud7 {
+  left: 3150px;
+}
+
+.cloud8 {
+  left: 3600px;
+}
+
+.tree {
+  position: absolute;
+  bottom: 520px;
+  z-index: 1;
+} 
