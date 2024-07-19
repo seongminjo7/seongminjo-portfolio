@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "Freesentation_R";
+  src: local("Freesentation-4Regular"),
+  url("../font/Freesentation-4Regular.woff2") format("woff"),
+  url("../font/Freesentation-4Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Freesentation_M";
+  src: local("Freesentation-5Medium"),
+  url("../font/Freesentation-5Medium.woff2") format("woff"),
+  url("../font/Freesentation-5Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Freesentation_SB";
+  src: local("Freesentation-6SemiBold"),
+  url("../font/Freesentation-6SemiBold.woff2") format("woff"),
+  url("../font/Freesentation-6SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Freesentation_B";
+  src: local("Freesentation-7Bold"),
+  url("../font/Freesentation-7Bold.woff2") format("woff"),
+  url("../font/Freesentation-7Bold.ttf") format("truetype");
+}

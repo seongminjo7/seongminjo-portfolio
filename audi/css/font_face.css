@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/* Audi Type */
+.audi_type {
+  font-family: "AudiType";
+}
+
+@font-face {
+  font-family: "AudiType";
+  src: local("AudiTypeVF_4.04"),
+  url("../font/AudiTypeVF_4.04.woff2") format("woff2"),
+  url("../font/AudiTypeVF_4.04.ttf") format("truetype");
+}
