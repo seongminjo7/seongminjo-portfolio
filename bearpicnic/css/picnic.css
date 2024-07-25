@@ -1,1 +1,324 @@
 @charset "utf-8";
+
+.wrap {
+  background: url(../img/picnic/hill.png) no-repeat right bottom;
+  background-color: #C0EFFF;
+}
+
+/* tree */
+.tree {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  width: 572px;
+  height: 989px;
+}
+
+.tree>div {
+  position: absolute;
+  right: 0;
+}
+
+.tree .tree1 {
+  top: 0;
+  width: 572px;
+  height: 482px;
+  background: url(../img/picnic/tree_1.png) no-repeat right center;
+}
+
+.tree .tree2 {
+  bottom: 60px;
+  width: 182px;
+  height: 672px;
+  background: url(../img/picnic/tree_2.png) no-repeat right center;
+}
+
+/* bear_picnic */
+
+.bear_picnic {
+  position: absolute;
+  right: 144px;
+  bottom: 0;
+  width: 904px;
+  height: 646px;
+  background: url(../img/picnic/mat.png) no-repeat center bottom;
+}
+
+.bear_picnic .bear {
+  position: absolute;
+  left: 50%;
+  bottom: 133px;
+  width: 410px;
+  height: 513px;
+  transform: translateX(-50%);
+}
+
+.bear_picnic .bear>img,
+.bear_picnic .bear>div {
+  position: absolute;
+}
+
+.bear_picnic .bear .bear_head {
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.bear_picnic .bear.on .bear_head{
+  animation: singAni 4s linear infinite;
+  transform-origin: 40% 100%;
+}
+@keyframes singAni {
+  0% {
+    transform: rotate(-2deg);
+  }
+
+  25% {
+    transform: rotate(3deg);
+  }
+
+  45% {
+    transform: rotate(-2deg);
+  }
+
+  75% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+
+.bear_picnic .bear .bear_head .face {
+  position: absolute;
+  width: 169px;
+  height: 89px;
+  left: 26px;
+  top: 152px;
+}
+
+.bear_picnic .bear .bear_head .face img {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.bear_picnic .bear.on .bear_head .face img {
+  display: block;
+}
+
+.bear_picnic .bear .body {
+  right: 36px;
+  bottom: 42px;
+}
+
+.bear_picnic .bear .leg {
+  z-index: 1;
+}
+.bear_picnic .bear.on .leg1{
+  animation: leg1Ani 4s linear infinite;
+  transform-origin: right top;
+}
+
+@keyframes leg1Ani{
+  0% {
+    transform: rotate(-10deg);
+  }
+
+  25% {
+    transform: rotate(10deg);
+  }
+
+  45% {
+    transform: rotate(-10deg);
+  }
+
+  75% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+.bear_picnic .bear.on .leg2{
+  animation: leg2Ani 4s linear infinite;
+  transform-origin: right top;
+}
+@keyframes leg2Ani{
+  0% {
+    transform: rotate(10deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  45% {
+    transform: rotate(10deg);
+  }
+
+  75% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+.bear_picnic .bear .leg1 {
+  left: 0;
+  bottom: 44px;
+}
+
+.bear_picnic .bear .leg2 {
+  left: 54px;
+  bottom: 0;
+}
+
+
+/* flower_bee */
+
+.flower_bee{
+  width: 378px;
+  height: 255px;
+  position: absolute;
+  left: 170px;
+  bottom: 20px;
+}
+.flower_bee .bee{
+  position: absolute;
+}
+.flower_bee .flower{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  height: 143px;
+}
+
+
+.flower img {
+  transform-origin: center bottom;
+}
+
+.flower img:nth-child(odd) {
+  animation: flw_odd 3s ease-in-out infinite;
+}
+
+@keyframes flw_odd {
+  0% {
+    transform: rotate(5deg);
+  }
+
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+.flower img:nth-child(even) {
+  animation: flw_even 3s ease-in-out infinite;
+}
+
+@keyframes flw_even {
+  0% {
+    transform: rotate(-5deg);
+  }
+
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+
+
+
+/* home */
+.home {
+  position: absolute;
+  left: 240px;
+  bottom: 460px;
+}
+
+
+/* cloud */
+
+.cloud {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 840px;
+  display: flex;
+  animation: cloud 50s linear infinite;
+  animation-timing-function: linear;
+  z-index: -50;
+}
+
+.cloud img {
+  position: absolute;
+}
+
+@keyframes cloud {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-75%)
+  }
+
+  100% {
+    transform: translateX(-150%);
+  }
+}
+
+
+.cloud1 {
+  left: 160px;
+}
+
+.cloud2 {
+  top: 100px;
+  left: 720px;
+}
+
+.cloud3 {
+  left: 1250px;
+}
+
+.cloud4 {
+  top: 50px;
+  left: 1700px;
+}
+
+.cloud5 {
+  left: 2200px;
+}
+
+.cloud6 {
+  top: 80px;
+  left: 2700px;
+}
+
+.cloud7 {
+  left: 3150px;
+}
+
+.cloud8 {
+  top: 20px;
+  left: 3600px;
+}

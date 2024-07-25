@@ -1,9 +1,20 @@
 @charset "utf-8";
 
 .wrap {
-  background: url(../img/home/wall.png) no-repeat right bottom;
   background-color: #C0EFFF;
 }
+
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../img/home/wall.png) no-repeat right bottom;
+  z-index: -5;
+}
+
+/* bear */
 
 .bear {
   width: 653px;
@@ -41,15 +52,23 @@
 
 .bear img.eye {
   display: none;
+  transition: .2s;
 }
 
 .bear img.eye.on {
   display: block;
 }
 
-.bear img.mouth {
+.bear .mouth {
+  position: absolute;
+  width: 165px;
+  height: 134px;
   top: 327px;
   right: 101px;
+  background: url(../img/home/mouth.png) no-repeat center center;
+}
+.bear .mouth.on{
+  background: url(../img/home/mouth_on.png) no-repeat center center;
 }
 
 .bear .cup_arm {
@@ -58,8 +77,9 @@
   height: 236px;
   left: 205px;
   bottom: 45px;
-  z-index: 5;
+  z-index: 15;
   transform-origin: left bottom;
+  cursor: pointer;
 }
 
 .bear .cup_arm.on {
@@ -109,49 +129,140 @@
   }
 }
 
+
+
+/* table */
+
 .table {
   position: absolute;
   bottom: 0;
   right: 359px;
-  z-index: 1;
+  z-index: 11;
 }
 
+
+/* mouse_bread */
 .mouse_bread {
   width: 400px;
   height: 212px;
   position: absolute;
   right: 500px;
   bottom: 23px;
+  cursor: pointer;
+}
+.mouse_bread.on{
+  animation: biteAni 6s;
+  animation-fill-mode: forwards;
+}
+@keyframes biteAni{
+  0%{
+    transform: translate(0, 0);
+  }
+  30%{
+    transform: translate(400px, -60px);
+  }
+/*   60%{
+    transform: translate(500px, -80px);
+  } */
+  100%{
+    transform: translate(3000px, -80px);
+  }
 }
 
 .mouse_bread .mouse {
   position: absolute;
   right: 0;
   top: 0;
+  animation: mouseAni 1s infinite;
+}
+@keyframes mouseAni{
+  0% {
+    transform: rotate(5deg);
+  }
+
+  25% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(5deg) ;
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
 }
 
-.mouse_bread .mouse.on {}
+.mouse_bread .mouse.on {
+/*   position: relative; */
+ animation: mousebiteAni 9s;
+}
+
+@keyframes mousebiteAni{
+  20%{
+    transform: translate(-50px, -100px);
+  }
+  40%{
+    transform: translate(-80px, -80px);
+  }
+  80%{
+    transform: translate(-50px,-60px);
+  }
+  100%{
+    transform: translate(-50px, 0);
+  }
+}
 
 .mouse_bread .bread_bite {
   position: absolute;
   left: 18px;
   top: 35px;
-  z-index: 5;
+  z-index: 15;
+  animation: breadAni 2s infinite;
 }
+@keyframes breadAni{
+  0% {
+    transform: rotate(5deg);
+  }
 
+  25% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(5deg) ;
+  }
+
+  75% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+.mouse_bread.on .bread_bite{
+  animation: none;
+}
 .plate {
   position: absolute;
   bottom: 25px;
   right: 654px;
-  z-index: 2;
+  z-index: 12;
 }
 
 .bread {
   position: absolute;
   bottom: 67px;
   right: 760px;
-  z-index: 6;
+  z-index: 16;
 }
+
+
+
+/* clock */
 
 .clock {
   width: 269px;
@@ -160,7 +271,8 @@
   background: url(../img/home/clock.png) no-repeat;
   z-index: -1;
   right: 1500px;
-  bottom: 555px;
+  top: 10px;
+  cursor: pointer;
 }
 
 .clock img {
@@ -171,6 +283,7 @@
   left: 80px;
   top: 66px;
   display: none;
+  transition: .4s;
 }
 
 .clock .clock_door.on {
@@ -181,17 +294,34 @@
   top: 45px;
   left: 75px;
   display: none;
+  transition: .4s;
 }
-.clock .bird.on{
+
+.clock .bird.on {
   display: block;
   animation: birdAni 2s ease-in-out;
 }
-@keyframes birdAni{
-  0%{transform: scale(.3);}
-  25%{transform: scale(1.1);}
-  50%{transform: scale(.7);}
-  70%{transform: scale(1.3);}
-  100%{transform: scale(0);}
+
+@keyframes birdAni {
+  0% {
+    transform: scale(.3);
+  }
+
+  25% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(.7);
+  }
+
+  70% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(0);
+  }
 }
 
 .clock .hand {
@@ -201,21 +331,21 @@
 .clock .middle {
   left: 131px;
   top: 183px;
-  z-index: 2;
+  z-index: 12;
 }
 
 .clock .hour {
   left: 131px;
   bottom: 240px;
   animation: handAni 10800s linear infinite;
-  z-index: 1;
+  z-index: 11;
 }
 
 .clock .min {
   left: 131px;
   bottom: 240px;
   animation: handAni 180s linear infinite;
-    z-index: 1;
+  z-index: 11;
 }
 
 .clock .sec {
@@ -223,19 +353,158 @@
   bottom: 240px;
   animation: handAni 3s linear infinite;
 }
-@keyframes handAni{
-  0%{}
-  100%{
+
+@keyframes handAni {
+  0% {}
+
+  100% {
     transform: rotate(360deg);
   }
 }
 
 
+/* window */
+
+.window {
+  width: 860px;
+  height: 542px;
+  position: absolute;
+  bottom: 390px;
+  right: 52px;
+  /* background: #ccc; */
+  cursor: pointer;
+}
+
+.window .curtain {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 11;
+}
+
+.window .curtain .cir {
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: right top;
+  transition: .5s;
+}
+
+.window .curtain .c_left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 430px;
+  height: 547px;
+  background-image: url(../img/home/curtain_L.png);
+}
+.window .curtain .c_left.on {
+  left: -298px;
+  width: 728px;
+  background-image: url(../img/home/curtain_open_L.png);
+}
+.window .curtain .c_right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 674px;
+  height: 547px;
+  background-image: url(../img/home/curtain_R.png);
+}
+.window .curtain .c_right.on {
+  background-image: url(../img/home/curtain_open_R.png);
+}
+.window .window_door {
+  position: absolute;
+  left: 14px;
+  top: 3px;
+  width: 832px;
+  height: 531px;
+  display: flex;
+}
+
+.window .window_door .win {
+  /* position: absolute; */
+  width: 416px;
+  height: 531px;
+}
+.window .window_door .win img{
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  transition: .5s;
+}
+.window .window_door .w_left img {
+  left: 0;
+
+}
+.window .window_door .w_right img {
+  right: 0;
+}
+.window .window_door .w_left.on img {
+  width: 10%;
+}
+
+.window .window_door .w_right.on img {
+  width: 10%;
+}
+
+
+/* picture_wall */
+
+.picture_wall{
+  position: absolute;
+  right: 990px;
+  top: 100px;
+  width: 290px;
+  height: 248px;
+  z-index: -1;
+  cursor: pointer;
+}
+.picture_wall .picture{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0; top: 0;
+  z-index: 1;
+/*   transition: .4s; */
+}
+
+.picture_wall:hover .picture {
+  transform: rotate(60deg);
+  transform-origin: top center;
+}
+.picture_wall .hole{
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  width: 147px;
+  height: 158px;
+  background: url(../img/home/hole.png) no-repeat center center;
+}
+.picture_wall .hole .mouse_h{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: .5s;
+}
+.picture_wall .hole:hover .mouse_h{
+  transform: translateX(40px);
+}
+
+
+/* picnic */
+
 .picnic {
   position: absolute;
   right: 18px;
   bottom: 50px;
-  z-index: 100;
+  z-index: 110;
   animation: picnicani 1s infinite;
   display: block;
   cursor: pointer;
@@ -265,4 +534,75 @@
   100% {
     transform: rotate(0);
   }
+}
+
+
+
+/* cloud */
+
+.cloud {
+  width: 100%;
+  height: 312px;
+  position: absolute;
+  left: 0;
+  top: 80px;
+  display: flex;
+  animation: cloud 35s linear infinite;
+  animation-timing-function: linear; 
+  z-index: -50;
+}
+
+.cloud img {
+  position: absolute;
+}
+
+@keyframes cloud {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-100%)
+  }
+
+  100% {
+    transform: translateX(-150%);
+  }
+}
+
+
+.cloud1 {
+  left: 1250px;
+}
+
+.cloud2 {
+  top: 100px;
+  left: 1700px;
+}
+
+.cloud3 {
+  left: 2200px;
+}
+
+.cloud4 {
+  top: 50px;
+  left: 2700px;
+}
+
+.cloud5 {
+  left: 3150px;
+}
+
+.cloud6 {
+  top: 80px;
+  left: 3600px;
+}
+
+.cloud7 {
+  left: 4000px;
+}
+
+.cloud8 {
+  top: 20px;
+  left: 4800px;
 }
