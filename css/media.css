@@ -29,10 +29,12 @@
     margin: 0;
     text-align: center;
   }
-  section .tit h2{
+
+  section .tit h2 {
     font-size: 60px;
     margin-top: 50px;
   }
+
   section .info {
     flex-direction: column;
     align-items: center;
@@ -48,9 +50,10 @@
     width: 360px;
   }
 
-  section .info .txt_box{
+  section .info .txt_box {
     transform: scale(.8);
   }
+
   .wrap>div.web_intro {
     display: none;
   }
@@ -65,7 +68,7 @@
   }
 
   .swiper ul.swiper-wrapper>li.swiper-slide {
-    margin-top: 260px;
+    /* margin-top: 260px; */
     /* margin: 200px 150px; */
     transform: scale(1.2);
   }
@@ -84,20 +87,48 @@
     margin-left: 85px;
     align-items: center;
     flex-direction: column;
+    position: relative;
   }
 
   .contact .con .left {
     position: absolute;
-    transform: translateY(-22%) scale(.7);
-    top: 22%;
+    transform: scale(.5);
+    top: 0;
   }
 
   .contact .con .right {
-    height: 100%;
+    height: 95%;
   }
 
   .contact .con .right h2 {
-    transform: scale(.8);
+    transform: scale(.7);
+  }
+  .contact .con .right .contact_me{
+    height: 260px;
+  }
+  .contact .con .right .contact_me .mail, .kakao{
+    transform: scale(.6);
+  }
+  .kakao_open{
+    height: 200px;
+  }
+  .kakao_open button ,.kakao_qr{
+    width: 120px;
+  }
+
+  .contact img.gmail,
+  .kakaotalk {
+    width: 60px;
+  }
+  .contact img.gmail{
+    left: 30%;
+    top: 70.5%;
+    transform: translate(-30%, -70.5%);
+  }
+  .contact img.kakaotalk {
+    left: 33%;
+    top: 79.5%;
+    transform: translate(-33%, -79.5%);
   }
 }
 
@@ -131,7 +162,7 @@
     width: 100%;
     height: 100%;
     margin: 0;
-    justify-content: flex-end;
+    justify-content: space-evenly;
   }
 
   .slide_nav_wrap {
@@ -172,6 +203,7 @@
   section .info {
     width: 90%;
     height: 65%;
+    margin-top: 60px;
   }
 
   section .tit {
@@ -180,6 +212,7 @@
   }
 
   section .tit h2 {
+    padding-top: 80px;
     font-size: 40px;
   }
 
@@ -296,7 +329,7 @@
 
   .contact .con {
     width: 100%;
-    height: 926px;
+    height: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -319,23 +352,21 @@
     transform: scale(.6);
     text-align: center;
   }
-
-  .contact .con .right .mail_contact {
-    width: 100%;
-    height: 40%;
-    transform: scale(.5);
+  
+  .contact img.gmail,
+  .kakaotalk {
+   display: none;
   }
-
-  .contact .con .right .mail_contact .mail {
-    margin-bottom: 40px;
+  .contact .con .right .contact_me{
+    height: 220px;
   }
-
-  .contact .con .right .mail_contact form.send .send_btn {
-    width: 200px;
-    height: 100px;
-    padding: 20px 0;
-    font-size: 35px;
-    border-radius: 50px;
+  .contact .con .right .contact_me>a{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
+  .contact .con .right .contact_me .mail, .kakao{
+    transform: scale(.45);
+  }
 }
