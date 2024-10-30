@@ -241,7 +241,7 @@ p {
 
 .main_visual .desktop {
   display: flex;
-  left: 84%;
+  left: 80%;
   top: 40%;
   transform: translate(-84%, -40%);
 }
@@ -265,8 +265,8 @@ p {
 
 .main_visual .teblet {
   display: flex;
-  top: 75%;
-  left: 95%;
+  top: 80%;
+  left: 93%;
   transform: translate(-95%, -75%);
 }
 
