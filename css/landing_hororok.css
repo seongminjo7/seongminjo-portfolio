@@ -253,8 +253,7 @@ p {
 }
 
 .main_visual .desktop p {
-  margin-left: 20px;
-  margin-top: -10px;
+
 }
 
 .main_visual .d_img {
@@ -417,8 +416,8 @@ dd.br {
 }
 
 .style_guide .font_style .typo1 {
-  left: -275px;
-  bottom: -160px;
+  left: 45px;
+  bottom: -80px;
 }
 
 .style_guide .font_style .typo1 img {
@@ -427,8 +426,8 @@ dd.br {
 }
 
 .style_guide .font_style .typo2 {
-  right: -190px;
-  bottom: -30px;
+  right: -100px;
+  bottom: 50px;
 }
 
 .style_guide .font_style .typo2 img {
@@ -455,7 +454,7 @@ dd.br {
   flex-direction: column;
   justify-content: space-around;
   font-size: 64px;
-  background: #D4AEE8;
+  background: #fcbb9b;
   border-radius: 60px;
 }
 
@@ -471,7 +470,7 @@ dd.br {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #FFDB65;
+  background: #ffe99f;
   border-radius: 60px;
 
   padding: 30px 46px;
@@ -501,8 +500,8 @@ dd.br {
   position: absolute;
   font-size: 45px;
   letter-spacing: -1.35px;
-  right: -250px;
-  top: 0;
+  right: 50px;
+  top:60px;
 }
 
 .style_guide .color_style .color1 img {

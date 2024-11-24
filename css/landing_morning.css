@@ -152,8 +152,8 @@ header {
 }
 
 header h1 {
-  width: 803px;
-  height: 132px;
+  width: 815px;
+  height: 112px;
   font-weight: 700;
   font-size: 96px;
   text-align: left;
@@ -376,8 +376,8 @@ dd.br {
 }
 
 .style_guide .font_style .typo1 {
-  left: -275px;
-  bottom: -160px;
+  left: 45px;
+  bottom: -80px;
 }
 
 .style_guide .font_style .typo1 img {
@@ -386,8 +386,8 @@ dd.br {
 }
 
 .style_guide .font_style .typo2 {
-  right: -260px;
-  bottom: -30px;
+  right: -20px;
+  bottom: 50px;
 }
 
 .style_guide .font_style .typo2 img {
@@ -410,7 +410,7 @@ dd.br {
   flex-direction: column;
   justify-content: space-around;
   font-size: 64px;
-  background: #D4AEE8;
+  background: #b5cde4;
   border-radius: 60px;
 }
 
@@ -427,7 +427,7 @@ dd.br {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #FFDB65;
+  background: #ddd1a9;
   border-radius: 60px;
   font-size: 48px;
   padding: 30px 46px;
@@ -435,7 +435,7 @@ dd.br {
 
 .style_guide .color_style {
   width: 1242px;
-  height: 520px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -453,8 +453,8 @@ dd.br {
   position: absolute;
   font-size: 45px;
   letter-spacing: -1.35px;
-  right: -250px;
-  top: 0;
+  right: 50px;
+  top: 100px;
 }
 
 .style_guide .color_style .color1 img {
@@ -584,15 +584,17 @@ article.con1 .musical_con {
 article.con1 .musical_con .info {
   position: absolute;
   left: 50%;
-  bottom: -165px;
+  bottom: -105px;
   transform: translateX(-50%);
+  color: #a2a2a2;
 }
 
 article.con1 .musical_con .info p {
+  width: 550px;
   position: absolute;
   right: -290px;
   bottom: 0;
-  font-size: 45px;
+  font-size: 62px;
   letter-spacing: -1.35px;
 }
 
@@ -630,15 +632,15 @@ article.con2 .recommended_product {
   width: 1061px;
   height: 1041px;
   position: absolute;
-  left: 10%;
+  left: 25%;
   top: 60%;
-  transform: translate(-10%, -60%);
+  transform: translate(-25%, -60%);
 }
 
 article.con2 .recommended_product .info {
   position: absolute;
-  bottom: 98px;
-  left: 100px;
+  bottom: 200px;
+  left: 300px;
   width: 800px;
   display: flex;
   flex-direction: column;
@@ -647,7 +649,6 @@ article.con2 .recommended_product .info {
 
 article.con2 .recommended_product .info p {
   align-self: flex-start;
-  margin-top: 10px;
   font-size: 45px;
   letter-spacing: -1.35px;
 }
@@ -672,7 +673,7 @@ article.con3 .store_info .store img {
 }
 
 article.con3 .store_info .store1 {
-  left: 24px;
+  left: 100px;
   top: 356px;
   width: 1015px;
   height: 713px;
@@ -680,12 +681,12 @@ article.con3 .store_info .store1 {
 }
 
 article.con3 .store_info .store1 img {
-  left: 197px;
+  left: 100px;
   top: 0;
 }
 
 article.con3 .store_info .store2 {
-  right: 23px;
+  right: 80px;
   top: 472px;
   width: 900px;
   height: 742px;
@@ -711,10 +712,10 @@ article.con3 .store_info .store3 img {
 
 article.con3 .s_info {
   position: absolute;
-  width: 1240px;
-  height: 656px;
+  width: 800px;
+  height: 450px;
   bottom: 97px;
-  right: 120px;
+  right: 300px;
 }
 article.con3 .s_info>img{
   position: absolute;
@@ -732,15 +733,10 @@ article.con4 {
 }
 
 article.con4 .data_plan {
-/*   width: 802px;
-  height: 908px; */
   position: absolute;
-  left: 208px;
-  top: 50%;
-  transform: translateY(-50%);
-/*   z-index: 1;
-  display: flex;
-  flex-direction: column; */
+  left: 400px;
+  top: 80%;
+  transform: translateY(-80%);
 }
 
 article.con4 .data_plan .info {
@@ -760,9 +756,6 @@ article.con4 .data_plan .info p{
 
 article.con4>img {
   position: absolute;
-}
-article.con4 img.data_plan_phone{
-  right: 320px; bottom: 0;
 }
 article.con4 img.data_plan_charactor{
   right: 0; bottom: 0;
