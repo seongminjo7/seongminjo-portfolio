@@ -377,11 +377,11 @@ section .info .img_box img {
 }
 
 .web1 {
-  background: #e8e5f2;
+  background: #d7edff;
 }
 
 .web1 h2 {
-  color: #160643;
+  color: #ff993a;
 }
 
 .web2 {
@@ -393,19 +393,19 @@ section .info .img_box img {
 }
 
 .web3 {
-  background: #eaeaf7;
+  background: #e8e5f2;
 }
 
 .web3 h2 {
-  color: #ee2c90;
+  color: #160643 ;
 }
 
 .web4 {
-  background: #d7edff;
+  background: #eaeaf7;
 }
 
 .web4 h2 {
-  color: #ff993a;
+  color: #ee2c90 ;
 }
 
 .web5 {
