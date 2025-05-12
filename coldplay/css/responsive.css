@@ -1,0 +1,46 @@
+/* 
+  1840px
+  1606px
+  1500px
+  1400px
+  812px  
+*/
+
+@media screen and (max-width : 1840px) {
+  .inner {
+    width: 100%;
+  }
+}
+
+/* 1606px */
+@media screen and (max-width : 1023px) {
+
+}
+
+/* 1500px */
+@media screen and (max-width : 1500px) {
+  header{
+    padding: 0px 80px;
+  }
+  .gnb{
+    display: none;
+  }
+}
+
+/* 1400px */
+@media screen and (max-width : 1400px) {
+
+}
+
+/* 812px */
+@media screen and (max-width : 812px) {
+  header{
+    padding: 0px 40px;
+  }
+  .hRightMenu{
+    width: 38px;
+  }
+  .sns{
+    display: none;
+  }
+}
