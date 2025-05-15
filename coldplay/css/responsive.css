@@ -47,11 +47,15 @@
   }
 }
 
-/* 1035px */
-@media screen and (max-width : 1035px) {
+/* 1166px */
+@media screen and (max-width : 1166px) {
   .visualText {
     padding-top: 150px;
   }
+}
+
+/* 1035px */
+@media screen and (max-width : 1035px) {
 
   .overview .overviewL h2 {
     font-size: 80px;
@@ -66,7 +70,7 @@
     margin-bottom: 30px;
   }
 
-      .footerWapper ul li {
+  .footerWapper ul li {
     padding: 0 20px 40px;
   }
 }
@@ -138,11 +142,18 @@
   .tourText .tourTitle {
     font-size: 35px;
   }
-    .footerWapper ul li {
+
+  .footerWapper ul li {
     padding: 0 10px 40px;
   }
 }
 
+/* 448px */
+@media screen and (max-width : 448px){
+    .visualText {    font-size: 65px;
+    padding-top: 180px;
+  }
+}
 /* 414px */
 @media screen and (max-width : 414px) {
 
@@ -180,13 +191,16 @@
   .tourText .tourTitle {
     font-size: 25px;
   }
-  .footerWapper ul{
+
+  .footerWapper ul {
     flex-wrap: wrap;
   }
-      .footerWapper ul li {
+
+  .footerWapper ul li {
     padding: 0 10px 20px;
   }
-  .footerWapper ul li:nth-child(3){
+
+  .footerWapper ul li:nth-child(3) {
     padding-left: 0;
   }
 }
